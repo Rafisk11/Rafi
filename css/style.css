@@ -1,0 +1,161 @@
+/* Reset defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+/* Body Styling */
+body {
+  background: #f7f8fa;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 60px;
+}
+
+/* Common Container */
+.container{
+  background: linear-gradient(white,rgb(254, 213, 91));
+  width: 100%;
+  max-width: 420px;
+  border-radius: 24px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 32px 24px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container1 {
+  background: linear-gradient(white,rgb(245, 126, 102));
+  width: 100%;
+  max-width: 420px;
+  border-radius: 24px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 32px 24px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover, .container1:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Logo */
+.logo img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+/* Headings */
+h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+/* Address */
+p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #555;
+  margin-bottom: 22px;
+}
+
+p img {
+  width: 16px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+/* Blocks (links) */
+.block1 {
+  background: black;
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.block1 img {
+  width: 22px;
+  height: 22px;
+}
+
+.block1:hover {
+  transform: translateY(-2px);
+}
+
+/* App download section */
+.apps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.apps img {
+  width: 140px;
+  transition: transform 0.3s ease;
+}
+
+.apps img:hover {
+  transform: scale(1.05);
+}
+
+/* Section spacing */
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Specific color accents */
+.container1 {
+  border-top: 6px solid #ff6a00;
+}
+
+.container {
+  border-top: 6px solid #ffc400;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  body {
+    padding: 24px 12px;
+  }
+
+  .container, .container1 {
+    padding: 24px 16px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .apps img {
+    width: 120px;
+  }
+}
